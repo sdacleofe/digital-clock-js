@@ -1,0 +1,51 @@
+$font-orbitron-family: 'Orbitron', sans-serif;
+$lime-green: rgb(173, 255, 47);
+$black: rgb(0, 0, 0);
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh ;
+    background-color: $black;
+    font-family: $font-orbitron-family;
+
+    .clock {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        color: $lime-green;
+        margin: 10px;
+
+        .time {
+            font-size: 3.95em;
+            text-align: center;
+        }
+
+        .date {
+            font-size: 1.55em;
+            text-align: center;
+        }
+    }
+
+    footer {
+        span {
+            color: $lime-green;
+        }
+
+        a {
+            color: $lime-green;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .time {
+        font-size: 1.95em !important;
+    }
+    .date {
+        font-size: 0.95em !important;
+    }
+}
